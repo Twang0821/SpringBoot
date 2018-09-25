@@ -23,8 +23,9 @@ public class TestServiceImpl implements TestService {
 	@Override
 	public User findUserById(int userId) {
 		System.out.println("service层实现类。。。。");
+		User u = new User();
+		u.setEmail("lyaning@sina.com");
 		return testDao.findById(userId);
-		
 	}
 
 	@Override
